@@ -15,8 +15,7 @@ for (var i = 0; i < splitString.length; i++) {
  var dealPrice = splitDeal[1].replace("R","");
 
   var priceOfAvo = Number(dealPrice/numberofAvoes).toFixed(2);
-
-   
+  return priceOfAvo;
 }
 }
-console.log(BestOfDeal(givenString));
+console.log(bestdeal(givenString));
