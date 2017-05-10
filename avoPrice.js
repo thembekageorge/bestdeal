@@ -9,11 +9,11 @@ function bestdeal(string){
 for (var i = 0; i < splitString.length; i++) {
 
   var splitDeal = splitString[i].split('for');
-
+ console.log("after splitting at for"+splitDeal);
  var numberofAvoes = splitDeal[0];
-
+  console.log ("numbers of the avoes"+numberofAvoes);
  var dealPrice = splitDeal[1].replace("R","");
-
+console.log("prices without R"+dealPrice);
   var priceOfAvo = Number(dealPrice/numberofAvoes).toFixed(2);
   return priceOfAvo;
 }
